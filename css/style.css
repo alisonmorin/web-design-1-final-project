@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  font-family: Merriweather, serif;
+  font-size: 110%;
 }
 
 *, *::before, *::after {
@@ -7,46 +9,251 @@ html {
 }
 
 body {
-  margin: none;
+  margin: 0;
+  background-color: white;
 }
 
-html {
-  font-family: Merriweather, serif;
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.bg-grey {
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
 }
 
 p {
   font-family: Roboto, serif;
 }
 
+
+
+/* how to take off padding on H1 and H2, and how to add padding on the individual sections*/
+
+h1, h2 {
+  margin-top: 0;
+}
+
+
+
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-
   display: flex;
-  justify-content: end;
-  flex-wrap: wrap;
+}
+
+nav li {
+  padding: 0 8px;
 }
 
 img {
   width: 100%;
+  display: block;
+}
+
+.name {
+  display: block;
 }
 
 header {
   background-color: black;
   color: white;
-  line-weight: 1.4;
-  font-size: 110%;
+  display: flex;
   padding: 10px 20px;
+  justify-content: space-between;
 }
 
-.nav:link,
-.nav:visited,
-.nav:hover,
-.nav:focus,
-.nav:active {
+nav a:link,
+nav a:visited {
   background-color: black;
   text-decoration: none;
   color: white;
-  padding: 10px 20px;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+
+}
+
+
+
+
+/* How to add a more of a padding aorund text on nav*/
+
+
+
+
+
+/* How to put text on one side, image on the other. Flexbox?*/
+
+.flex {
+  display: flex;
+  padding-bottom: 0;
+  align-items: center;
+}
+
+
+#services h2 {
+  text-align: center;
+}
+
+
+
+/* How to only put a white background aroud the individual bodies of text*/
+
+
+
+
+.projects {
+  display: flex;
+  gap: 2em;
+}
+
+.projects div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0 1em 1em;
+  border-radius: 4px;
+  border: 2px solid #ccc;
+}
+
+.projects p {
+  flex-grow: 1;
+}
+
+a.button:link,
+a.button:visited {
+  background-color: black;
+  padding: 5px 3px;
+  border: 2px solid black;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+a.button:hover,
+a.button:focus,
+a.button:active {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
+
+
+/* How to have the button only on the text and not the length of box*/
+
+
+
+
+.work {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+/* How to have type covering smaller area*/
+
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+.grid div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
+}
+
+.grid div:nth-child(2) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row: 1;
+}
+
+.grid div:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 2;
+}
+
+.grid div:nth-child(4) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 2;
+}
+
+.grid div:nth-child(5) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row: 2;
+}
+
+
+/* How to make quotes using felx?*/
+.flex-blockquote {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-blockquote blockquote {
+  width: 70%;
+  text-align: center;
+}
+
+
+
+/* How to have type covering smaller area*/
+
+.socials {
+  padding: 0;
+  display: flex;
+}
+
+.socials img {
+  width: 40px;
+}
+
+.links {
+  max-width: 800px;
+}
+
+
+
+
+/* How to get rid of the indent on images and center it*/
+
+
+
+
+footer {
+  text-align: center;
+  padding: 0.1px 0px;
 }
