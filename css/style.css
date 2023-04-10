@@ -22,10 +22,16 @@ body {
   background-color: #f2f2f2;
 }
 
-.wrapper {
+.wrapper-title {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2em 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5em 0;
 }
 
 .hero {
@@ -38,15 +44,13 @@ p {
   font-family: Roboto, serif;
 }
 
-
-
-/* how to take off padding on H1 and H2, and how to add padding on the individual sections*/
-
 h1, h2 {
   margin-top: 0;
 }
 
-
+span {
+  font-size: 1.50em;
+}
 
 nav ul {
   list-style-type: none;
@@ -91,19 +95,7 @@ nav a:active {
   background-color: white;
   text-decoration: none;
   color: black;
-
 }
-
-
-
-
-/* How to add a more of a padding aorund text on nav*/
-
-
-
-
-
-/* How to put text on one side, image on the other. Flexbox?*/
 
 .flex {
   display: flex;
@@ -111,17 +103,14 @@ nav a:active {
   align-items: center;
 }
 
-
 #services h2 {
   text-align: center;
 }
 
-
-
-/* How to only put a white background aroud the individual bodies of text*/
-
-
-
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
 
 .projects {
   display: flex;
@@ -135,11 +124,15 @@ nav a:active {
   background-color: #fff;
   padding: 0 1em 1em;
   border-radius: 4px;
-  border: 2px solid #ccc;
+  border: 2px solid #e2e2e2;
 }
 
 .projects p {
   flex-grow: 1;
+}
+
+.projects h3 {
+  margin-bottom: 0;
 }
 
 a.button:link,
@@ -161,24 +154,15 @@ a.button:active {
   border: 2px solid black;
 }
 
-
-
-/* How to have the button only on the text and not the length of box*/
-
-
-
-
 .work {
   text-align: center;
-  max-width: 800px;
+  max-width: 760px;
   margin: 0 auto;
 }
 
-
-/* How to have type covering smaller area*/
-
-
-
+.work p {
+  margin-bottom: 3em;
+}
 
 .grid {
   display: grid;
@@ -216,8 +200,10 @@ a.button:active {
   grid-row: 2;
 }
 
+.quotes {
+  text-align: center;
+}
 
-/* How to make quotes using felx?*/
 .flex-blockquote {
   display: flex;
   justify-content: space-around;
@@ -228,11 +214,12 @@ a.button:active {
   text-align: center;
 }
 
-
-
-/* How to have type covering smaller area*/
+blockquote {
+  font-style: italic;
+}
 
 .socials {
+  list-style-type: none;
   padding: 0;
   display: flex;
 }
@@ -241,19 +228,21 @@ a.button:active {
   width: 40px;
 }
 
-.links {
-  max-width: 800px;
+.socials {
+  max-width: 120px;
+  margin: 0 auto;
 }
 
-
-
-
-/* How to get rid of the indent on images and center it*/
-
-
-
+.links {
+  text-align: center;
+  max-width: 690px;
+  margin: 0 auto;
+}
 
 footer {
   text-align: center;
   padding: 0.1px 0px;
+  background-color: black;
+  color: white;
+  padding: 1px;
 }
